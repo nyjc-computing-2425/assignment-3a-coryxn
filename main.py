@@ -16,10 +16,10 @@ else:
     num = int(num)
   quotient, remainder = divmod(num, 11)
   if nric[0].startswith('S') or nric[0].startswith('T'):
-    list = ['J', 'Z', 'I', 'H', 'G', 'F', 'E', 'D', 'C', 'B', 'A']
+    string = ('J', 'Z', 'I', 'H', 'G', 'F', 'E', 'D', 'C', 'B', 'A')
   else: 
-    list = ['X', 'W', 'U', 'T', 'R', 'Q', 'P', 'N', 'M', 'L', 'K']
-  if list[remainder] == nric [-1]:
+    string = ('X', 'W', 'U', 'T', 'R', 'Q', 'P', 'N', 'M', 'L', 'K')
+  if string[remainder] == nric [-1]:
     print('NRIC is valid.')
   else:
     print('NRIC is invalid.')
